@@ -74,6 +74,70 @@
                 <use href="./images/icons.svg#icon-close-modal"></use>
               </svg>
             </button>
+
+            <!-- Forma -->
+
+            <form>
+              <p class="promo-modal">Оставьте свои данные, мы вам перезвоним</p>
+              <ul class="forma-list">
+                <li>
+                  <label class="label-name">
+                    <span class="label-correction">Имя</span>
+                    <span class="icon-position">
+                      <input class="input-form" type="text" name="name" required />
+                      <svg class="icon-form-group">
+                        <use href="./images/icons.svg#icon-man"></use>
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-name">
+                    <span class="label-correction">Телефон</span>
+                    <span class="icon-position">
+                      <input class="input-form" type="tel" name="tel" required />
+                      <svg class="icon-form-group">
+                        <use href="./images/icons.svg#icon-tube"></use>
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="label-name">
+                    <span class="label-correction">Почта</span>
+                    <span class="icon-position">
+                      <input class="input-form" type="email" name="email" required />
+                      <svg class="icon-form-group">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+
+              <label class="label-nam">
+                <span class="label-correction">Комментарий</span>
+                <textarea
+                  class="textarea-comment"
+                  name="comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+
+              <div class="form-checkbox">
+                <label class="label-checkbox">
+                  <input type="checkbox" name="policy" class="hide-input" />
+                  <svg class="icon-form-checkbox">
+                    <use href="./images/icons.svg#icon-quare"></use>
+                  </svg>
+
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href="" class="policy-link">Условия договора</a>
+                </label>
+              </div>
+
+              <button type="submit" class="button-modal">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -373,9 +437,9 @@
 
     <footer class="basement">
       <div class="container base-attach">
-        <div class="strits">
+        <div>
           <a href="./index.html" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
-          <address>
+          <address class="strits">
             <ul class="adress-list">
               <li class="tel-mail">
                 <a
@@ -429,6 +493,29 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <!-- Subscription -->
+
+        <div class="subscription">
+          <p class="subscription-promo">Подпишитесь на рассылку</p>
+          <form class="subscription-form" name="subscription-form" autocomplete="off" novalidate>
+            <label class="subscription-label">
+              <input
+                class="subscription-input"
+                type="email"
+                name="email"
+                required
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="button-subs">
+              Подписаться
+              <svg class="subscription-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
